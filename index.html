@@ -4,8 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OpenAI Demo</title>
-    <script type="module" crossorigin src="/assets/index-CWpQA13A.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-BMqOTYW0.css">
+    <script>
+      window.onerror = function(msg, url, line, col, error) {
+        console.error('Error: ' + msg + '\nurl: ' + url + '\nline: ' + line);
+        document.body.innerHTML += '<div style="color: red;">加载出错，请查看控制台</div>';
+        return false;
+      };
+    </script>
+    <script type="module" crossorigin src="./assets/index.CdHU7tbn.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index.DBhOdbYi.css">
   </head>
   <body>
     <div id="app"></div>
